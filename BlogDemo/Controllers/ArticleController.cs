@@ -38,7 +38,7 @@ namespace BlogDemo.Controllers
             return View();
         }
 
-        // 相应新建文章提交
+        // 响应新建文章提交
         public ActionResult InsertSubmit(string titel, string content)
         {
             Article newArticle = new Article();
@@ -58,7 +58,7 @@ namespace BlogDemo.Controllers
             return View();
         }
 
-        // 相应修改文章提交
+        // 响应修改文章提交
         public ActionResult UpdateSubmit(int articleId, string newTitel, string newContent)
         {
             Article article = database.Articles.Find(articleId);
