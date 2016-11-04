@@ -1,0 +1,9 @@
+﻿@using BlogDemo.Models
+
+@{
+    ViewBag.Title = "InsertSubmit";
+    Article article = ViewBag.Article;
+}
+
+<h2>新建 @article.Titel 成功</h2>
+<a href="Show?articleId=@article.ArticleId">查看</a>

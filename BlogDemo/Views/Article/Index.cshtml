@@ -1,0 +1,15 @@
+﻿@using BlogDemo.Models
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>文章列表</h2>
+
+@foreach (Article article in ViewBag.Articles)
+{
+    <p>@article.Titel --------- <a href="Show?articleId=@article.ArticleId">查看</a>,<a href="Update?articleId=@article.ArticleId">修改</a></p>
+}
+
+<h2><a href="Insert">新建文章</a></h2>
+

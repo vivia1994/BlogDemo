@@ -1,0 +1,15 @@
+﻿@using BlogDemo.Models
+
+@{
+    ViewBag.Title = "Update";
+    Article article = ViewBag.Article;
+}
+
+<h2>修改文章</h2>
+<form action="UpdateSubmit" method="post">
+    <input type="hidden" name="articleId" value="@article.ArticleId"/>
+    <input type="text" name="newTitel" value="@article.Titel"/><br />
+    <textarea name="newContent" rows=4 cols=20>@article.Content</textarea><br />
+    <input type="submit"/>
+</form>
+
